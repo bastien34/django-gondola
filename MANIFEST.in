@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include gondola/static *
+recursive-include gondola/templates *
+recursive-include docs *
+

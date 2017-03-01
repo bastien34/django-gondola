@@ -1,3 +1,4 @@
 *.py[oc]
 django_gondola.egg-info
 dist
+.idea

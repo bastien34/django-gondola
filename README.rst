@@ -43,6 +43,7 @@ In a template load the gondola template tag library then you will be  able
 to use the template tag 'gondola'.
 
 .. code:: python
+
     {% load gondola %}
 
     ...

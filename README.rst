@@ -50,8 +50,7 @@ to use the template tag 'gondola'.
     {% gondola %}
 
 To manage gondole, create new row, add new images, visit the
-
-    ``gondola/dashboard``
+``gondola/dashboard`` page.
 
 
 
@@ -63,10 +62,11 @@ To manage gondole, create new row, add new images, visit the
 
     ``./manage.py migrate``
 
-    ``./manage.py runserver``
+    `./manage.py runserver`
 
 
-You can load demo data to test the app and appreciate what it does.
+If you want to test the app with fake data you can instead see the
+django-gondola-sandbox instead.
 
 
 

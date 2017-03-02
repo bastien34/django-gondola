@@ -2,7 +2,7 @@
 
 from django.conf.urls import url
 
-from .dashboard.views import (
+from .views import (
     dashboard_view, gondole_update_view, gondole_create_view,
     gondole_list_view, gondole_delete_view,
     gondola_create_view, gondola_delete_view,

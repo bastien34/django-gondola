@@ -3,8 +3,8 @@ from django.views.generic.base import TemplateView
 from django.views.generic.edit import UpdateView, CreateView, DeleteView
 from django.views.generic.list import ListView
 
-from ..models import GondoleRow, Gondola
-from ..tables import GondoleRowTable
+from gondola.models import GondoleRow, Gondola
+from gondola.tables import GondoleRowTable
 
 
 class GondolaDashboardView(TemplateView):

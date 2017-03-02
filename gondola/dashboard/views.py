@@ -3,8 +3,8 @@ from django.views.generic.base import TemplateView
 from django.views.generic.edit import UpdateView, CreateView, DeleteView
 from django.views.generic.list import ListView
 
-from .models import GondoleRow, Gondola
-from .tables import GondoleRowTable
+from ..models import GondoleRow, Gondola
+from ..tables import GondoleRowTable
 
 
 class GondolaDashboardView(TemplateView):
@@ -66,7 +66,7 @@ gondole_create_view = GondoleRowCreateView.as_view()
 class GondoleRowDeleteView(DeleteView):
     model = GondoleRow
     template_name = 'gondola/dashboard/gondolerow_form.html'
-    success_url = reverse_lazy('gondole:gondole-list')
+    success_url = reverse_lazy('gondola:gondole-list')
 
 
 gondole_delete_view = GondoleRowDeleteView.as_view()
@@ -95,7 +95,7 @@ gondola_create_view = GondolaRowCreateView.as_view()
 
 class GondolaRowDeleteView(DeleteView):
     model = Gondola
-    success_url = reverse_lazy('gondole:gondole-list')
+    success_url = reverse_lazy('gondola:gondole-list')
     template_name = 'gondola/dashboard/gondolerow_form.html'
 
 

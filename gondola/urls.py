@@ -1,14 +1,18 @@
 #  noqa
 
 from django.conf.urls import url
-from .views import (dashboard_view, gondole_update_view, gondole_create_view,
-                    gondole_list_view, gondole_delete_view,
-                    gondola_create_view, gondola_delete_view,
-                    gondola_update_view, )
 
+from .dashboard.views import (
+    dashboard_view, gondole_update_view, gondole_create_view,
+    gondole_list_view, gondole_delete_view,
+    gondola_create_view, gondola_delete_view,
+    gondola_update_view, )
+
+
+app_name = 'gondola'
 
 urlpatterns = [
-    url(r'^dashboard$', dashboard_view, name='dashboard'),
+    url(r'^$', dashboard_view, name='gondola-index'),
     url(r'^gondole-list$', gondole_list_view, name='gondole-list'),
 
     # Gondole row editing

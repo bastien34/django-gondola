@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class=""><a href="/admin">Django admin</a></li>
+                <li class=""><a href="{% url 'admin:gondola' %}">Django admin</a></li>
                 {% block extra_nav %}{% endblock %}
             </ul>
         </div>
@@ -25,9 +25,7 @@
 </nav>
 
 <section>
-
     {% block main_section %}{% endblock %}
-
 </section>
 
 

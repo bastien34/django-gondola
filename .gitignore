@@ -2,3 +2,5 @@
 django_gondola.egg-info
 dist
 .idea
+js_virtualenv
+node_modules

@@ -13,7 +13,7 @@ class GondolaDashboardView(TemplateView):
     password protected.
     """
 
-    template_name = 'gondola/dashboard/dashboard.html'
+    template_name = 'gondola/dashboard/index.html'
 
 
 dashboard_view = GondolaDashboardView.as_view()

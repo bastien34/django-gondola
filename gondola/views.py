@@ -25,7 +25,7 @@ class GondoleListView(ListView):
     password protected.
     """
 
-    template_name = 'gondola/dashboard/gondolerow_list.html'
+    template_name = 'gondola/dashboard/gondolerow-list.html'
     model = GondoleRow
 
     def get_queryset(self):

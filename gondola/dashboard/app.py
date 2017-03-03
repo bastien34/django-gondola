@@ -2,11 +2,11 @@ from django.contrib.admin.views.decorators import staff_member_required
 
 from oscar.core.application import Application
 
-from ..urls import urlpatterns
+from .urls import urlpatterns
 
 
 class GondolaDashboardApplication(Application):
-    name = 'gondola'
+    name = None
 
     def get_urls(self):
         return self.post_process_urls(urlpatterns)

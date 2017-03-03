@@ -9,6 +9,6 @@
       {% csrf_token %}
     {{ form.as_p }}
     <input type="submit" value="{% trans 'Save' %}" /> |
-    <a href="{% url 'gondola:gondole-list' %}">{% trans "Cancel" %}</a>
+    <a href="{% url 'dashboard:gondole-list' %}">{% trans "Cancel" %}</a>
   </form>
 {% endblock %}

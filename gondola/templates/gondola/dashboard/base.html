@@ -17,7 +17,9 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class=""><a href="{% url 'admin:gondola' %}">Django admin</a></li>
+                <li><a href="{% url 'dashboard:gondola-index' %}">{% trans "Gondole row dashboard homepage" %}</a></li>
+                <li><a href="{% url 'dashboard:gondole-create' %}">{% trans "Create a gondole row" %}</a></li>
+                <li><a href="{% url 'dashboard:gondola-create' %}">{% trans "Create a gondola image" %}</a></li>
                 {% block extra_nav %}{% endblock %}
             </ul>
         </div>

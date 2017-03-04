@@ -9,7 +9,7 @@ from .views import (
     gondola_update_view, )
 
 
-app_name = 'gondola'
+app_name = 'dashboard'
 
 urlpatterns = [
     url(r'^$', dashboard_view, name='gondola-index'),

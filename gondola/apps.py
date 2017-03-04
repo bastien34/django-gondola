@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class GondolaGridConfig(AppConfig):
+class GondolaConfig(AppConfig):
     name = 'gondola'

@@ -4,3 +4,5 @@ dist
 .idea
 js_virtualenv
 node_modules
+build
+files.text

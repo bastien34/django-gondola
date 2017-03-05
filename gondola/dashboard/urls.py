@@ -1,4 +1,4 @@
-#  noqa
+# flake8: noqa, because URL syntax is more readable with long lines
 
 from django.conf.urls import url
 

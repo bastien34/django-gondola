@@ -4,19 +4,28 @@
 
   {% for gondola in gondole %}
     <li class="g-{{ gondola.type }}">
-      <span class="gondola-content-wrapper">
+      <span class="gondola-content-wrapper hovereffect">
 
         <a href="{{ gondola.link_to }}" class="gondola-content">
 
           {# Gondola image #}
           <img src="{{ gondola.url }}" alt="" class=""/>
 
+            <div class="overlay">
+
+                <h2>{{ gondola.label }}</h2>
+
+                <span class="info">{{ gondola.description }}</span>
+
+            </div>
+
           {# Gondola label & description #}
-          <span class="gondola-overlay">
-            <span class="gondola-text">
-              <span class="g-label">{{ gondola.label }}</span>
-            </span>
-          </span>
+{#          <span class="gondola-overlay">#}
+{#            <span class="gondola-animation">#}
+{#              <span class="g-label">{{ gondola.label }}</span>#}
+{#              <span class="g-description">{{ gondola.description }}</span>#}
+{#            </span>#}
+{#          </span>#}
         </a>
 
       </span>

@@ -127,11 +127,9 @@
 }
 
 .hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
+//  float: left;
   overflow: hidden;
-  position: relative;
+//  position: relative;
   text-align: center;
   cursor: default;
 }
@@ -156,36 +154,39 @@
   text-align: center;
   display: block;
   position: relative;
+  top: 40%;
+//  bottom: 50%;
   font-size: 17px;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  .translate(0, 45px);
+  background: rgba(0, 0, 0, 0.2);
   .transition(all 0.4s ease-in-out);
 }
 
 .hovereffect:hover h2 {
-  .translate(0, 5px);
+  .translate(0, -100%);
 }
 
 .hovereffect span.info {
   display: inline-block;
+//  position: relative;
   text-decoration: none;
-//  padding: 20px 10px;
-  text-transform: uppercase;
+//  padding: 80px 10px 0 10px;
+//  text-transform: uppercase;
   color: #fff;
   background-color: transparent;
   opacity: 0;
   filter: alpha(opacity=0);
-  .scale(0);
-
-
-  .transition(all 0.4s ease-in-out);
   font-weight: normal;
-  margin: -50px 0 0 0;
+  margin: 35px 20px 0 20px;
+
+  .scale(0);
+  .transition(all 0.4s ease-in-out);
 }
 
 .hovereffect:hover span.info {
   opacity: 1;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
   filter: alpha(opacity=100);
   .scale(1);
 }

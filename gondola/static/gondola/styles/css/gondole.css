@@ -178,6 +178,11 @@
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
 }
+@media only screen and (min-width: 768px) {
+  .hovereffect span.info {
+    margin-top: 60px;
+  }
+}
 .hovereffect:hover span.info {
   opacity: 1;
   padding: 10px;

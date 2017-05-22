@@ -11,7 +11,8 @@ class Gondola(models.Model):
     It aims to highlight a feature, a product range or whatever.
     """
     label = models.CharField(max_length=256)
-    image = models.ImageField(validators=[validate_gondola])
+    image = models.ImageField(validators=[validate_gondola],
+                              upload_to='images/gondole')
     link_to = models.CharField(max_length=200, blank=True, null=True)
     description = models.CharField(max_length=256, blank=True, null=True)
     position = models.SmallIntegerField(default=1)

@@ -6,7 +6,6 @@ from .urls import urlpatterns
 
 
 class GondolaDashboardApplication(Application):
-    name = None
 
     def get_urls(self):
         return self.post_process_urls(urlpatterns)

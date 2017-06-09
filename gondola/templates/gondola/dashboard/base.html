@@ -4,30 +4,30 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Gondole Dashboard {{ version }}]</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="{% static 'gondola/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'gondola/styles/css/gondole_dashboard.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'gondola/styles/css/gondole.css' %}" />
+  <title>Gondole Dashboard {{ version }}]</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="{% static 'gondola/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'gondola/styles/css/gondole_dashboard.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'gondola/styles/css/gondole.css' %}" />
 </head>
 
 <body class="gondole-dashboard">
 
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="{% url 'dashboard:gondola-index' %}">{% trans "Gondole row dashboard homepage" %}</a></li>
-                <li><a href="{% url 'dashboard:gondole-create' %}">{% trans "Create a gondole row" %}</a></li>
-                <li><a href="{% url 'dashboard:gondola-create' %}">{% trans "Create a gondola image" %}</a></li>
-                {% block extra_nav %}{% endblock %}
-            </ul>
-        </div>
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="{% url 'dashboard:gondola-index' %}">{% trans "Gondole row dashboard homepage" %}</a></li>
+        <li><a href="{% url 'dashboard:gondole-create' %}">{% trans "Create a gondole row" %}</a></li>
+        <li><a href="{% url 'dashboard:gondola-create' %}">{% trans "Create a gondola image" %}</a></li>
+        {% block extra_nav %}{% endblock %}
+      </ul>
     </div>
+  </div>
 </nav>
 
 <section>
-    {% block main_section %}{% endblock %}
+  {% block main_section %}{% endblock %}
 </section>
 
 

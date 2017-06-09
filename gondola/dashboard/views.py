@@ -3,8 +3,8 @@ from django.views.generic.base import TemplateView
 from django.views.generic.edit import UpdateView, CreateView, DeleteView
 from django.views.generic.list import ListView
 
-from gondola.models import GondoleRow, Gondola
-from gondola.tables import GondoleRowTable
+from ..models import GondoleRow, Gondola
+from ..tables import GondoleRowTable
 
 
 class GondolaDashboardView(TemplateView):
@@ -32,6 +32,7 @@ class GondoleListView(ListView):
         return self.model.objects.filter(active=False)
 
     def get_context_data(self, **kwargs):
+
         context = super().get_context_data(**kwargs)
         context['active_gondole_table'] = GondoleRowTable(
             self.model.objects.filter(active=True))
@@ -49,6 +50,10 @@ class GondoleRowUpdateView(UpdateView):
     model = GondoleRow
     template_name = 'gondola/dashboard/gondolerow_form.html'
     fields = ('label', 'active', 'position', 'images')
+
+    def get(self, request, *args, **kwargs):
+        import ipdb; ipdb.set_trace()
+        return super().get(request, *args, **kwargs)
 
 
 gondole_update_view = GondoleRowUpdateView.as_view()
